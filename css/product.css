@@ -1,0 +1,112 @@
+
+.item-wrapper{
+    position: relative;
+    top: 11rem;
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+.item-wrapper > img{
+    height: 46rem;
+}
+.right-item-wrapper{
+    position: relative;
+    top: 8rem;
+    /* right: 25%; */
+}
+.right-item-wrapper > h1{
+    font-size: 38px;
+    color: rgb(102, 100, 100);
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.right-item-wrapper > h1 + p{
+    font-size: 22px;
+    margin-top: .8rem;
+    color: rgb(168, 162, 162)
+}
+input[type="number"]{
+    height: 4rem;
+    color: gray;
+    width: 32rem;
+    margin-top: 2.6rem;
+    border-radius: .4rem;
+    background: transparent;
+    padding: 1px 3%;
+    border: 1.3px solid rgb(150, 147, 147) !important;
+}
+input[type="submit"].cart{
+    height: 4rem;
+    color: gray;
+    width: 32rem;
+    align-items: center;
+    margin-top: 1.4rem;
+    border-radius: .4rem;
+    background:#ff7800;
+    color: #fff;
+    border: 2px solid #ff7800;
+    padding: 6px 9px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+input[type="submit"].cart:hover{
+    border: 1.5px solid #363636 !important;
+    transition: linear all .3s !important; 
+    background: none !important;
+    color: gray !important;
+    cursor: pointer !important;
+}
+.item-desc{
+    font-size: 14.5px !important;
+    color: #464545;
+    margin-top: 1.4rem;
+}
+
+
+
+
+/* ### Media queries for smaller screens ###*/
+
+@media  all and (max-width: 1800px) {
+    .right-item-wrapper{
+        position: relative;
+        top: 3rem;
+    }
+}
+
+@media  all and (max-width: 1100px) {
+    .right-item-wrapper{
+        position: relative;
+        top: 3rem;
+        left: 25%;
+    }
+}
+
+@media all and (max-width: 600px){
+    .right-item-wrapper > h1{
+        font-size: 27px !important;
+    }
+    .item-wrapper > img{
+        width: 72%;
+        height: 30rem;
+        top: -2rem;
+        position: relative;
+    }
+    .right-item-wrapper{
+        position: relative;
+        left: 9%;
+    }
+    .right-item-wrapper > h1 + p{
+        font-size: 17px;
+    }
+    input[type="submit"].cart{
+        font-size: 11px;
+    }
+    .item-desc{
+        font-size: 11.5px !important;
+    }
+}

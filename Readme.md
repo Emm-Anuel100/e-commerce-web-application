@@ -1,6 +1,6 @@
 
-   <h1>Shoplex e-commerce web-application</h1>
-   <br /><br />
+   <h1>Shoplex e-commerce system</h1>
+   <br />
    <h2>Overview</h2>
    <br />
    <p>This is an e-commerce web application done with the following technologies.

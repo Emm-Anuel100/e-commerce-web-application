@@ -51,7 +51,7 @@
         line-height: 25px;
         text-align: left;
         color: gray;
-        width: 50% !important;
+        width: 80% !important;
     }
     section.section{
         justify-content: center;
@@ -66,9 +66,11 @@
          color: gray;
          font-size: 13.5px;
          background:none;
-         border: 1px solid gray !important;
          letter-spacing: 1.1px;
     }
+	#contact-infor{
+         border: 1px solid gray !important; 
+	}
     .proceed-to-pay-btn {
         text-align: center;
         top: 2rem;

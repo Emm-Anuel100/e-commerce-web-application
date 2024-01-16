@@ -1,14 +1,3 @@
-<?php
-
-## select all from api_keys table
-$result = mysqli_query($conn, "SELECT * FROM (api_keys)");
-
-if (mysqli_num_rows($result) > 0){
-  # fetch next row
-  $row = mysqli_fetch_array($result);
-}
-
-?> 
 
 
 <?=page_header('Shoplex | Proceed to payment')?>
@@ -22,8 +11,7 @@ if (mysqli_num_rows($result) > 0){
     <input type="hidden" id="amount" required value="<?= $_SESSION["sub_total"] ?>" />
   </div>
   <div class="form-group">
-   <!-- fetch API_KEY column from database -->
-  <input type="hidden" id="api_key" value="<?= $row["paystack_key"]; ?>" />
+  <input type="hidden" id="api_key" value="pk_test_4d75f5f5bd6c850d3f4c57fe7a55d9b7c84d566f" />
   </div>
   <div class="form-submit">
     <button type="submit" onclick="payWithPaystack()" class="pays_btn"> Pay on website <i class="fas fa-arrow-right"></i></button>
@@ -73,7 +61,7 @@ button:hover i{
 
   let handler = PaystackPop.setup({
 
-   key:  document.getElementById("api_key").value, // API public key
+   key:  document.querySelector('#api_key'), // API public key
    email: document.getElementById("email-address").value,
    amount: document.getElementById("amount").value * 100,
    ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you

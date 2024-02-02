@@ -10,7 +10,6 @@
       <li>javascript</li>
       <li>php</li>
       <li>mysql</li>
-      <li>paystack API</li>
    </p>
    <br />
    <h2>Features</h2>
@@ -18,7 +17,7 @@
       <li>add to cart</li>
       <li>proceed to checkout</li>
       <li>authentication</li>
-      <li>payment integration</li>
+      <li>payment integration(paystack)</li>
       <li>product search filter</li>
       <li>available products section</li>
       <li>my cart section</li>

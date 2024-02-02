@@ -51,7 +51,7 @@ echo <<<EOT
 
 <header class="header">
 
-    <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i> shoplex </a>
+    <a href="./index.php" class="logo"> <i class="fas fa-shopping-cart"></i> shoplex </a>
 
     <nav class="navbar">
         <a href="./index.php" id="home">home</a>

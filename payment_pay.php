@@ -52,7 +52,7 @@ button:hover i{
 
 <!-- script for initializing payment API -->
 <script src="https://js.paystack.co/v1/inline.js"></script>
-<script>
+<script type="text/javascript">
     const paymentForm = document.getElementById('paymentForm');
     paymentForm.addEventListener("submit", payWithPaystack, false);
 
@@ -61,13 +61,14 @@ button:hover i{
 
   let handler = PaystackPop.setup({
 
-   key:  document.querySelector('#api_key'), // API public key
+   key: document.querySelector('#api_key').value, // API public key
    email: document.getElementById("email-address").value,
    amount: document.getElementById("amount").value * 100,
    ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
    // label: "Optional string that replaces customer email"
    onClose: function(){
-     alert('Window closed.');
+      alert("window closed");
+      window.location = "./index.php";
    },
    callback: function(response){
      let message = 'Payment complete! Reference: ' + response.reference;
@@ -78,6 +79,13 @@ button:hover i{
  
  handler.openIframe();
 }
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+   e.preventDefault();
+
+   let pay_btn = document.querySelector('.pays_btn');
+   pay_btn.click();
+});
 </script>
 
 <?=page_footer()?>

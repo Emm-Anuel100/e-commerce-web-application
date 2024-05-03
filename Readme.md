@@ -11,11 +11,11 @@ This is an e-commerce web application built using the following technologies:
 
 ## Features
 
-- Add to cart
+- Add to cart section
+- Search for products
 - Proceed to checkout
-- Authentication
+- User authentication
 - Payment integration (Paystack)
-- Product search filter
 - Available products section
 - My cart section
 - Remove item from cart

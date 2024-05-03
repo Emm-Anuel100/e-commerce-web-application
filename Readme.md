@@ -27,5 +27,8 @@ To get the project, you can clone the repository from GitHub using the following
 
 ```shell
 git clone https://github.com/Emm-Anuel100/e-commerce-web-application.git
+```
 
+```shell
+cd e-commerce-web-application
 ```

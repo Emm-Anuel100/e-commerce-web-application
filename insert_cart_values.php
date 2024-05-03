@@ -26,7 +26,7 @@ $_SESSION["contact"] = $_POST["contact"];
    
       ## pass a query on the database
     if ($conn->query($sql)=== true) {
-        ## if values are inserted into databese then redirect to our index page
+        ## if values are inserted into database then redirect to the payment page
         $redirect = "./index.php?page=payment_pay";
         header("Location: $redirect");
 

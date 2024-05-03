@@ -15,7 +15,7 @@ This is an e-commerce web application built using the following technologies:
 - Search for products
 - Proceed to checkout
 - User authentication
-- Payment integration (Paystack)
+- Payment via ussd,bank transfer e.tc
 - Available products section
 - My cart section
 - Remove item from cart

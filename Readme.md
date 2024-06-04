@@ -1,30 +1,34 @@
+# Shoplex E-commerce System
 
-   <h1>Shoplex e-commerce system</h1>
-   <br />
-   <h2>Overview</h2>
-   <br />
-   <p>This is an e-commerce web application done with the following technologies.
-      <br /><br />
-      <li>html5</li>
-      <li>css3</li>
-      <li>javascript</li>
-      <li>php</li>
-      <li>mysql</li>
-      <li>paystack API</li>
-   </p>
-   <br />
-   <h2>Features</h2>
-   <br />
-      <li>add to cart</li>
-      <li>proceed to checkout</li>
-      <li>authentication</li>
-      <li>payment integration</li>
-      <li>product search filter</li>
-      <li>available products section</li>
-      <li>my cart section</li>
-      <li>remove item from cart</li>
-      <li>update product quantity</li>
-      <br /><br />
-      <h2>View</h2>
-      <br />
-      <p>Check out project live <a href="#">Here</a></p>
+## Overview
+
+This is an e-commerce web application built using the following technologies:
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
+
+## Features
+
+- Add to cart section
+- Search for products
+- Proceed to checkout
+- User authentication
+- Payment via ussd,bank transfer e.tc
+- Available products section
+- My cart section
+- Remove item from cart
+- Update product quantity
+
+## Shell
+
+To get the project, you can clone the repository from GitHub using the following shell command:
+
+```shell
+git clone https://github.com/Emm-Anuel100/e-commerce-web-application.git
+```
+
+```shell
+cd e-commerce-web-application
+```

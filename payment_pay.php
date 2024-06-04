@@ -11,7 +11,7 @@
     <input type="hidden" id="amount" required value="<?= $_SESSION["sub_total"] ?>" />
   </div>
   <div class="form-group">
-  <input type="hidden" id="api_key" value="pk_test_4d75f5f5bd6c850d3f4c57fe7a55d9b7c84d566f" />
+  <input type="hidden" id="api_key" value="key" />
   </div>
   <div class="form-submit">
     <button type="submit" onclick="payWithPaystack()" class="pays_btn"> Pay on website <i class="fas fa-arrow-right"></i></button>

@@ -75,10 +75,8 @@ button:hover i{
      alert(message);
      window.location = "./index.php";
 	 
-	<?php
 	 ## unset cart session which will clear all items in user's cart
      unset($_SESSION['cart']);
-	?>
    }
  });
  

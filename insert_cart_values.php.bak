@@ -31,6 +31,8 @@ $_SESSION["contact"] = $_POST["contact"];
         $redirect = "./index.php?page=payment_pay";
         header("Location: $redirect");
 
+        ## unset cart session which will claer all items in user's cart
+        ##unset($_SESSION['cart']);
     }
     else{
       ## if there is an error while inserting values into database
